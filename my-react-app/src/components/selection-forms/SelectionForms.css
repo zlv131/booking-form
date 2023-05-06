@@ -1,0 +1,23 @@
+.wrapper__selectionForms{
+    margin: 20px 0px 0px 80px;
+}
+
+.blockList{
+    display: flex;
+    margin: 0px 0px 0px 0px;
+    gap: 100px;
+}
+
+.blockButton{
+    display: flex;
+    align-items: end;
+    gap: 315px;
+    margin: 20px 0px 0px 0px;
+}
+
+
+.title{
+    font-size: 16px;
+    margin: 15px 0px 0px 0px;
+}
+
