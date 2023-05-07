@@ -4,10 +4,9 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import {listFloor} from "../../const.js";
+import {listFloor} from "../../../const.js";
 import '../SelectionForms.css';
 const FloorSelectionList = ({ floor, setFloor }) => {
-	
 	const handleChange = (event) => {
 		setFloor(event.target.value);
 	};
@@ -31,5 +30,4 @@ const FloorSelectionList = ({ floor, setFloor }) => {
 		</div>
 	);
 };
-
 export default FloorSelectionList;

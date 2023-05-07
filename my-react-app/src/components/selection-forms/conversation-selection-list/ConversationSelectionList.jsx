@@ -4,13 +4,12 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import {listConversation} from "../../const.js";
+import {listConversation} from "../../../const.js";
 import '../SelectionForms.css'
 const ConversationSelectionList = ({ conversation, setConversation }) => {
 	const handleChange = (event) => {
 		setConversation(event.target.value);
 	};
-	
 	
 	return (
 		<div className="wrapper__conversationSelectionList">
@@ -28,10 +27,7 @@ const ConversationSelectionList = ({ conversation, setConversation }) => {
 					</Select>
 				</FormControl>
 			</Box>
-		
-		
 		</div>
 	);
 };
-
 export default ConversationSelectionList;

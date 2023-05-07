@@ -6,7 +6,6 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import '../SelectionForms.css';
 const TowerSelectionList = ({ tower,  setTower}) => {
-	
 	const handleChange = (event) => {
 		setTower(event.target.value);
 	};
@@ -23,14 +22,11 @@ const TowerSelectionList = ({ tower,  setTower}) => {
 						value={tower}
 						label="Этаж"
 						onChange={handleChange}>
-						
 						<MenuItem value={"A"}> A </MenuItem>
 						<MenuItem value={"B"}> B </MenuItem>
 					</Select>
 				</FormControl>
 			</Box>
-		
-		
 		</div>
 	);
 };

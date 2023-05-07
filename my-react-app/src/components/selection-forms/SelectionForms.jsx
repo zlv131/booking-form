@@ -33,6 +33,7 @@ const SelectionForms = () => {
 			console.log(JSON.stringify({ floor, tower, conversation, date, time, message }));
 		} else return;
 	}
+	
 	const handleForm = (event) => {
 		if (event.target.value === 'Очистить форму') {
 			resetForm();
@@ -44,7 +45,7 @@ const SelectionForms = () => {
 	return (
 		<div className="wrapper__selectionForms">
 			<form action="#" className="form">
-				<div className="blockList">
+				<div className="form__blockList">
 					<FloorSelectionList floor={floor} setFloor={setFloor}/>
 					<ConversationSelectionList conversation={conversation} setConversation={setConversation}/>
 					<TowerSelectionList tower={tower} setTower={setTower}/>
@@ -52,7 +53,7 @@ const SelectionForms = () => {
 				<DatePickerForm date={date} setDate={setDate}/>
 				<TimePickerForm time={time} setTime={setTime}/>
 				<CommentField message={message} setMessage={setMessage}/>
-				<div className="blockButton">
+				<div className="form__blockButton">
 					<BaseButton handleForm={handleForm} title={'Очистить форму'}/>
 					<BaseButton handleForm={handleForm} title={'Забронировать'}/>
 				</div>

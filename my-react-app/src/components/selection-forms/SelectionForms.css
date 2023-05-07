@@ -2,13 +2,13 @@
     margin: 20px 0px 0px 80px;
 }
 
-.blockList{
+.form__blockList{
     display: flex;
     margin: 0px 0px 0px 0px;
     gap: 100px;
 }
 
-.blockButton{
+.form__blockButton{
     display: flex;
     align-items: end;
     gap: 315px;
